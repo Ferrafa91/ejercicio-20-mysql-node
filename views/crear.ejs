@@ -13,30 +13,40 @@
     />
   </head>
   <body>
-    <form>
+    <form method="post">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label"
           >Crear nuevo usuario</label
         >
+      </div>
+      <div class="mb-3">
+        <label for="createName" class="form-label">Nombre</label>
         <input
-          type="email"
+          type="text"
           class="form-control"
-          id="exampleInputEmail1"
-          aria-describedby="emailHelp"
+          name="createName"
+          id="createName"
         />
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="exampleInputPassword1" />
+        <label for="createLastName" class="form-label">Apellido</label>
+        <input
+          name="createLastName"
+          type="text"
+          class="form-control"
+          id="createLastName"
+        />
       </div>
-      <div class="mb-3 form-check">
-        <input type="text" class="form-check-input" id="exampleCheck1" />
-        <label class="form-check-label" for="exampleCheck1">Apellido</label>
+      <div class="mb-3">
+        <label for="createAge" class="form-label">Edad</label>
+        <input
+          name="createAge"
+          type="text"
+          class="form-control"
+          id="createAge"
+        />
       </div>
-      <div class="mb-3 form-check">
-        <input type="number" class="form-check-input" id="exampleCheck1" />
-        <label class="form-check-label" for="exampleCheck1">Edad</label>
-      </div>
+
       <button type="submit" class="btn btn-primary">Guardar</button>
       <a href=""><i class="bi bi-arrow-left">Volver</i></a>
     </form>
