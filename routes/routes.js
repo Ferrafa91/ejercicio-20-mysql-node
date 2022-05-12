@@ -2,6 +2,7 @@ const mysql = require("mysql2");
 const express = require("express");
 const router = express.Router();
 
+/////////////// RUTA PARA TRAER A TODOS LOS USUARIOS DE LA DATABASE  /////////////////
 router.get("/", (req, res) => {
   const connection = mysql.createConnection({
     host: "localhost",
