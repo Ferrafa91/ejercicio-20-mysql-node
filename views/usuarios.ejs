@@ -14,7 +14,7 @@
   </head>
   <body>
     <h1>Listado de usuarios</h1>
-    <a class="btn btn-success" href="">Nuevo</a>
+    <a class="btn btn-success" href="/usuarios/crear">Nuevo</a>
     <table class="table">
       <thead>
         <tr>
@@ -38,7 +38,11 @@
               href="<%= `usuarios/editar/${user.id}` %> "
               >Editar</a
             >
-            <a class="btn btn-danger" href="">Eliminar</a>
+            <a
+              class="btn btn-danger"
+              href="<%= `usuarios/eliminar/${user.id}` %>"
+              >Eliminar</a
+            >
           </th>
         </tr>
         <% } %>
