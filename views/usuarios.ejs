@@ -33,7 +33,11 @@
           <td><%= user.lastname %></td>
           <td><%= user.age %></td>
           <th scope="col">
-            <a class="btn btn-primary" href="">Editar</a>
+            <a
+              class="btn btn-primary"
+              href="<%= `usuarios/editar/${user.id}` %> "
+              >Editar</a
+            >
             <a class="btn btn-danger" href="">Eliminar</a>
           </th>
         </tr>
